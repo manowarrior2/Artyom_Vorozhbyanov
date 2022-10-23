@@ -1,0 +1,117 @@
+<!DOCTYPE html> 
+<HTML lang ="en"> 
+        <HEAD> 
+            <META charset="utf-8"> 
+            <TITLE>Формы</TITLE> 
+        </HEAD> 
+        <BODY> 
+           <table width ="700px" align ="center">
+            <tr> 
+                <td>
+                    <form action ="mysite" method ="get" name="search">
+                        <p><strong>Простая форма поиска с вариантами:</strong></p>
+                        <p>Строка поиска<br>
+                        <input type= "search" maxlength ="10">
+                        <input type= "button" value ="Искать"><br>
+                        <input type ="radio" name ="choice1" value ="choice1" checked>на сайте
+                        <input type ="radio" name ="choice1" value ="choice2">в google<br>
+                        <em>Длина запроса не более 10 символов</em>
+                        </p>
+                    </form>
+                </td> 
+                <td>
+                    <form action ="google.ru" method ="get" name="search2">
+                        <p><strong>Простая форма поиска с вариантами:</strong></p>
+                        <p>Строка поиска<br>
+                        <input type= "search" required autofocus>*
+                        <input type= "button" value ="Искать"><br>
+                        <input type ="radio" name ="choice1" value ="choice1">на сайте
+                        <input type ="radio" name ="choice1" value ="choice1" checked>в google<br>
+                        <em>* - обязательное поле</em><br>
+                        <em>Автофокус в поле поиска</em>
+                        </p>
+                    </form>
+                </td>             
+            </tr>
+            <tr>
+                <td>
+                    <form action ="google.ru" method ="get" name="login">
+                        <p><strong>Простая форма авторизации:</strong></p>
+                        <p>Авторизуйтесь<br>
+                        <input type="text" required>* Логин<br>
+                        <input type="password" required>* Пароль<br>
+                        <input type="checkbox"> Оставаться в системе<br>
+                        <input type="submit" value="Войти"> 
+                        <em>* - обязательное поле</em><br>
+                        </p>
+                    </form>
+                </td>      
+                <td>
+                    <form action ="google.ru" method ="get" name="vote">
+                        <p><strong>Опрос (голосование):</strong></p>
+                        <p>Как вам?<br>
+                        <input type="radio" name="vote1" value="vote1">Ничего</br>
+                        <input type="radio" name="vote1" value="vote2">Неплохо<br>
+                        <input type="radio" name="vote1" value="vote3"> Хорошо<br>
+                        <input type="radio" name="vote1" value="vote4"> Супер<br>
+                        <input type="hidden"name="date_voite", value="2013.12.31">
+                        <input type="submit" value="Отправить"><br>
+                        <em>Есть скрытое поле<br>
+                            name=date_voite, value="2013.12.31"</em>
+                        </p>
+                    </form>
+                </td>          
+            </tr>            
+            <tr> 
+                <td>
+                    <form action ="google.ru" method ="post" name="review">
+                        <p><strong>Отзыв:</strong></p>
+                        <p>Оставьте Ваш отзыв:<br>
+                        <input type="text" required>* Имя<br>
+                        <input type="email" required>* E-mail<br>
+                        <textarea placeholder="Форма отправки"></textarea><br>
+                        <input type="submit" value ="Отправить"><br>
+                        <em>* - обязательное поле<br>
+                            поле email - с проверкой<br>
+                            метод POST
+                        </em>
+                        </p>
+                    </form>
+                </td>   
+                <td>
+                    <form action ="google.ru" method ="get" name="cities">
+                        <p><strong>Выпадающий и мульти-список:</strong></p>
+                        <p>Города РБ<br>
+                            <select>
+                                <optgroup label="Города РБ">
+                                    <option value="1">Брест</option>
+                                    <option value="2">Минск</option>
+                                    <option value="3">Витебск</option>
+                                </optgroup>
+                                <optgroup label="Города России">
+                                    <option value="4">Москва</option>
+                                    <option value="5">Рязань</option>
+                                    <option value="6">Магадан</option>
+                                </optgroup>
+                            </select>
+                            <select multiple size ="8" name="cities1[]">
+                                <optgroup label="Города РБ">
+                                    <option value="1">Брест</option>
+                                    <option value="2">Минск</option>
+                                    <option value="3">Витебск</option>
+                                </optgroup>
+                                <optgroup label="Города России">
+                                    <option value="4">Москва</option>
+                                    <option value="5">Рязань</option>
+                                    <option value="6">Магадан</option>
+                                </optgroup>
+                            </select>
+                        </p>
+                    </form>
+                </td>            
+            </tr>
+            <tr>                
+            </tr>
+            </table>
+        </BODY> 
+</HTML> 
