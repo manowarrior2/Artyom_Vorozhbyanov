@@ -10,47 +10,51 @@
                 <td>
                     <form action ="mysite" method ="get" name="search">
                         <p><strong>Простая форма поиска с вариантами:</strong></p>
-                        <p>Строка поиска<br>
+                        <fieldset>  
+                        <legend>Строка поиска</legend>
                         <input type= "search" maxlength ="10">
                         <input type= "button" value ="Искать"><br>
                         <input type ="radio" name ="choice1" value ="choice1" checked>на сайте
                         <input type ="radio" name ="choice1" value ="choice2">в google<br>
                         <em>Длина запроса не более 10 символов</em>
-                        </p>
+                        </fieldset>
                     </form>
                 </td> 
                 <td>
-                    <form action ="google.ru" method ="get" name="search2">
+                    <form action ="google" method ="get" name="search2">
                         <p><strong>Простая форма поиска с вариантами:</strong></p>
-                        <p>Строка поиска<br>
+                        <fieldset>
+                        <legend>Строка поиска</legend>
                         <input type= "search" required autofocus>*
                         <input type= "button" value ="Искать"><br>
                         <input type ="radio" name ="choice1" value ="choice1">на сайте
                         <input type ="radio" name ="choice1" value ="choice1" checked>в google<br>
                         <em>* - обязательное поле</em><br>
                         <em>Автофокус в поле поиска</em>
-                        </p>
+                    </fieldset>
                     </form>
                 </td>             
             </tr>
             <tr>
                 <td>
-                    <form action ="google.ru" method ="get" name="login">
+                    <form action ="login" method ="get" name="login">
                         <p><strong>Простая форма авторизации:</strong></p>
-                        <p>Авторизуйтесь<br>
+                        <fieldset>
+                        <legend>Авторизуйтесь</legend>
                         <input type="text" required>* Логин<br>
                         <input type="password" required>* Пароль<br>
                         <input type="checkbox"> Оставаться в системе<br>
                         <input type="submit" value="Войти"> 
                         <em>* - обязательное поле</em><br>
-                        </p>
+                        </fieldset>
                     </form>
                 </td>      
                 <td>
-                    <form action ="google.ru" method ="get" name="vote">
+                    <form action ="vote" method ="get" name="vote">
                         <p><strong>Опрос (голосование):</strong></p>
-                        <p>Как вам?<br>
-                        <input type="radio" name="vote1" value="vote1">Ничего</br>
+                        <fieldset>
+                        <legend>Как вам?</legend>
+                        <input type="radio" name="vote1" value="vote1">Ничего<br>
                         <input type="radio" name="vote1" value="vote2">Неплохо<br>
                         <input type="radio" name="vote1" value="vote3"> Хорошо<br>
                         <input type="radio" name="vote1" value="vote4"> Супер<br>
@@ -58,30 +62,32 @@
                         <input type="submit" value="Отправить"><br>
                         <em>Есть скрытое поле<br>
                             name=date_voite, value="2013.12.31"</em>
-                        </p>
+                        </fieldset>
                     </form>
                 </td>          
             </tr>            
             <tr> 
                 <td>
-                    <form action ="google.ru" method ="post" name="review">
+                    <form action ="review" method ="post" name="review">
                         <p><strong>Отзыв:</strong></p>
-                        <p>Оставьте Ваш отзыв:<br>
-                        <input type="text" required>* Имя<br>
-                        <input type="email" required>* E-mail<br>
-                        <textarea placeholder="Форма отправки"></textarea><br>
-                        <input type="submit" value ="Отправить"><br>
-                        <em>* - обязательное поле<br>
+                        <fieldset>
+                            <legend>Оставьте Ваш отзыв:</legend>
+                            <input type="text" required>* Имя<br>
+                            <input type="email" required>* E-mail<br>
+                            <textarea placeholder="Форма отправки"></textarea><br>
+                            <input type="submit" value ="Отправить"><br>
+                            <em>* - обязательное поле<br>
                             поле email - с проверкой<br>
                             метод POST
-                        </em>
-                        </p>
+                            </em>
+                        </fieldset>
                     </form>
                 </td>   
                 <td>
-                    <form action ="google.ru" method ="get" name="cities">
+                    <form action ="cities" method ="get" name="cities">
                         <p><strong>Выпадающий и мульти-список:</strong></p>
-                        <p>Города РБ<br>
+                        <fieldset>
+                            <legend>Города РБ</legend>
                             <select>
                                 <optgroup label="Города РБ">
                                     <option value="1">Брест</option>
@@ -105,12 +111,22 @@
                                     <option value="5">Рязань</option>
                                     <option value="6">Магадан</option>
                                 </optgroup>
+                                <input type="submit" value="OK">
                             </select>
-                        </p>
+                        </fieldset>
                     </form>
                 </td>            
             </tr>
-            <tr>                
+            <tr> 
+                <td>
+                    <form action ="upload" method ="post" name="review" enctype="multipart/form-data">
+                        <p><strong>Загрузка файла на сервер:</strong></p>
+                        <fieldset>
+                        <legend>Upload:</legend>
+                        <input type="file" multiple>
+                        </em>
+                        </fieldset>
+                </td>              
             </tr>
             </table>
         </BODY> 
