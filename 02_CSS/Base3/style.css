@@ -1,0 +1,29 @@
+body {
+    background-color: rgb(219,219,219);
+}
+
+#nav {
+    width: 15em;
+    background-color: rgb(204,204,204);
+    float: left;
+}
+#nav1 {
+    margin-top:0
+}
+
+div {
+    background-color: rgb(170,170,170);
+}
+
+footer {
+    background-color: rgb(204,204,204);
+}
+
+.article {
+    margin-bottom: .2em;
+    margin-left: 240px;
+}
+
+footer {
+    clear: both;
+}
