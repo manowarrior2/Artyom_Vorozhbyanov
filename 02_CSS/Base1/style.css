@@ -39,3 +39,36 @@ span {
     background-image: url('cards.png');
     background-position: 3px -2379px;
 }
+
+.class {
+    height: 200px;
+    width: 140px;
+    position: sticky;
+    top: 0px;
+}
+
+#c1{
+    background-image: url('cards.png');
+    background-position: 139px -1585px;
+}
+
+#c2{
+    background-image: url('cards.png');
+    background-position: 571px -1783px;
+}
+
+#c3{
+    background-image: url('cards.png');
+    background-position: -288px -1385px;
+}
+
+
+#c4{
+    background-image: url('cards.png');
+    background-position: -144px -2181px;
+}
+
+#c5{
+    background-image: url('cards.png');
+    background-position: 3px -2379px;
+}
