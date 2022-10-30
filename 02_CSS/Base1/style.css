@@ -1,0 +1,41 @@
+body {
+    width: 800px;
+    margin: 0 auto;
+}
+
+div {
+    height: 200px;
+    width: 750px;
+    margin-top: 100px;
+}
+
+span {
+    display: inline-block;
+    height: 200px;
+    width: 140px;
+}
+
+#span1 {
+    background-image: url('cards.png');
+    background-position: 139px -1585px;
+}
+
+#span2 {
+    background-image: url('cards.png');
+    background-position: 571px -1783px;
+}
+
+#span3 {
+    background-image: url('cards.png');
+    background-position: -288px -1385px;
+}
+
+#span4 {
+    background-image: url('cards.png');
+    background-position: -144px -2181px;
+}
+
+#span5 {
+    background-image: url('cards.png');
+    background-position: 3px -2379px;
+}
