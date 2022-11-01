@@ -3,33 +3,32 @@ body {
     border: 4px solid white;
 }
 
+
+.main {
+    display: flex;
+    flex-direction: row;
+}
+
 #nav {
-    width: 15em;
     background-color: rgb(204,204,204);
-    float: left;
-}
-#nav1 {
-    margin-top:0;
+    flex: 0 0 15em;
+    align-self: flex-start;
 }
 
-ul {
-    margin-top:0;
-}
+.page {
+    flex: 1 1 auto;
 
-div {
-    background-color: rgb(170,170,170);
 }
 
 footer {
     background-color: rgb(204,204,204);
-    clear: both;
     text-align: center;
     border-top: 2px solid white;
 }
 
 .article {
     margin-bottom: 0.2em;
-    margin-left: 240px;
+    background-color: rgb(170,170,170);
     overflow: auto;
 }
 
@@ -38,14 +37,6 @@ footer {
     margin-bottom: 0;
 }
 
-
-h4 {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
 .img {
-    float:right;
+    float: right;
 }
