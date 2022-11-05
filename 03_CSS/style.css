@@ -1,0 +1,92 @@
+    .MenuLevel1 {
+        width: 100%;
+    }
+    
+    .menu { 
+        float: left;
+        border: solid 1px; 
+        position: relative; 
+        cursor: pointer;
+        width: 19%;
+        background-color: rgb(211,211,211); 
+        color: rgb(130,130,130);
+    }
+    
+    .MenuLevel2 {
+        display: none;
+        position: absolute;
+        background-color: rgb(211,211,211);
+        width: 100%;
+        z-index: 1;
+    }
+    
+    a { 
+        display: block;
+        color: rgb(130,130,130);
+        text-decoration: none;
+        border: solid 1px;
+    }
+
+    .menu:hover .MenuLevel2 {
+        display: block;
+    }
+    
+    .menu:hover .day {
+        color: rgb(211,211,211);
+        background-color: rgb(130,130,130);
+    }
+
+    .MenuLevel2 a:hover {
+        color: rgb(211,211,211);
+        background-color: rgb(130,130,130);
+    }
+
+
+
+@media all and (max-width: 400px) {
+
+    .MenuLevel1 {
+        width: 150px;
+    }
+    
+    .menu { 
+        background-color: rgb(211,211,211); 
+        color: rgb(130,130,130);
+        border: solid 1px; 
+        position: relative; 
+        cursor: pointer;
+        width: 150px;
+    }
+    
+    .MenuLevel2 { 
+        width: 150px; 
+        display: none;
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        top: 0px;
+        left: 100%;
+    }
+    
+    a { 
+        display: block;
+        color: rgb(130,130,130);
+        text-decoration: none;
+        border: solid 1px;
+    }
+
+    .menu:hover .MenuLevel2 {
+        display: block;
+    }
+    
+    .menu:hover .day {
+        color: rgb(211,211,211);
+        background-color: rgb(130,130,130);
+    }
+
+    .MenuLevel2 a:hover {
+        color: rgb(211,211,211);
+        background-color: rgb(130,130,130);
+    }
+
+}
