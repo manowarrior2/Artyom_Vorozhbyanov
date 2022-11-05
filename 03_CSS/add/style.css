@@ -13,11 +13,13 @@
     }
     
     .MenuLevel2 {
-        display: none;
         position: absolute;
         background-color: rgb(211,211,211);
         width: 100%;
         z-index: 1;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 2s ease 0.15s, visibility 2s ease 0.15s;
     }
     
     .MenuLevel2 a { 
@@ -28,7 +30,8 @@
     }
 
     .menu:hover .MenuLevel2 {
-        display: block;
+        opacity: 1;
+        visibility: visible;
     }
     
     .menu:hover .day {
@@ -42,11 +45,10 @@
     }
 
 
-
 @media all and (max-width: 250px) {
 
     .MenuLevel1 {
-        width: 150px;
+        width: 100px;
     }
     
     .menu { 
@@ -59,13 +61,15 @@
     }
     
     .MenuLevel2 { 
-        width: 100px; 
-        display: none;
+        width: 150px;
         position: absolute;
         z-index: 1;
         width: 100%;
         top: 0px;
         left: 100%;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 2s ease 0.15s, visibility 2s ease 0.15s;
     }
     
     .MenuLevel2 a { 
@@ -76,7 +80,8 @@
     }
 
     .menu:hover .MenuLevel2 {
-        display: block;
+        opacity: 1;
+        visibility: visible;
     }
     
     .menu:hover .day {
