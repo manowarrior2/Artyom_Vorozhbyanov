@@ -1,0 +1,70 @@
+.met1 {
+padding: 4em;
+background-image: url(img/b-r.gif), url(img/b-l.gif), url(img/t-l.gif), url(img/t-r.gif), url(img/l.gif), url(img/r.gif), url(img/t.gif), url(img/b.gif);
+background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, repeat-y, repeat-y, repeat-x, repeat-x;
+background-position: bottom right, bottom left, top left, top right, left, right, top, bottom;
+background-color: rgb(219,219,219);
+margin-bottom: 30px;
+}
+
+.met2 { 
+    background:
+    url("img/b-r.gif") no-repeat bottom right,
+    url("img/b-l.gif") no-repeat bottom left,
+    url("img/t-l.gif") no-repeat top left,
+    url("img/t-r.gif") no-repeat top right,
+    url("img/l.gif") repeat-y left,  
+    url("img/r.gif") repeat-y right,
+    url("img/t.gif") repeat-x top,  
+    url("img/b.gif") repeat-x bottom,
+    rgb(219,219,219);
+    padding: 4em;
+    margin-bottom: 30px;
+}
+
+
+.met3 {
+    background: url("img/l.gif") repeat-y left,
+    rgb(219,219,219);
+    margin-bottom: 30px;
+}
+
+#d1 {
+    background: url("img/t.gif") repeat-x top;
+}
+
+#d2 {
+    background: url("img/r.gif") repeat-y right;
+}
+
+#d3 {
+    background: url("img/b.gif") repeat-x bottom;
+}
+
+#d4 {
+    background: url("img/t-l.gif") no-repeat top left;
+}
+
+#d5 {
+    background: url("img/t-r.gif") no-repeat top right;
+}
+
+#d6 {
+    background: url("img/b-l.gif") no-repeat bottom left;
+}
+
+#d7 { 
+    background: url("img/b-r.gif") no-repeat bottom right;
+}
+
+#d8 {
+    padding: 4em;
+}
+
+.met4 {
+    border: 50px solid;
+    border-image-source: url("img/ramka.png");
+    border-image-slice: 100;
+    border-image-repeat: stretch; 
+    border-image-width: 5em;
+}
