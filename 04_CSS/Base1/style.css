@@ -10,15 +10,11 @@ p {
     padding: 5px;
 }
 
-a {
-    text-decoration: underline;
-}
-
 a:visited {
     color: blue;
 }
 
-.doc {
+.file {
     background-image: url(img/uni.png);
     background-repeat: no-repeat;
     background-position: left;

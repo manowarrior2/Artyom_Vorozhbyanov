@@ -1,0 +1,59 @@
+body {
+    width: 800px;
+    margin: 0 auto;
+}
+
+p {
+    text-indent: 40px;
+    border: solid 1px;
+    border-radius: 0px 10px;
+    padding: 5px;
+}
+
+a:visited {
+    color: blue;
+}
+
+p a[href="file"]::before {
+    content: url(img/uni.png);
+    padding-right: 5px;
+}
+
+p a[href$=".doc"]::before {
+    content:url(img/doc.png);
+    padding-right: 5px;
+}
+
+p a[href=".pdf"]::before {
+    content:url(img/pdf.png);
+    padding-right: 5px;
+}
+
+p a[href^="11"]::before {
+    content:url(img/arc.gif);
+    padding-right: 5px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li::before {
+    content: url(img/list.jpg);
+    padding-right: 5px;
+}
+
+li a[href$=".doc"]:hover::after {
+    content:url(img/doc.png);
+    padding-left: 5px;
+}
+
+li a[href=".pdf"]:hover::after {
+    content:url(img/pdf.png);
+    padding-left: 5px;
+}
+
+li a[href^="11"]:hover::after {
+    content:url(img/arc.gif);
+    padding-left: 5px;
+}
