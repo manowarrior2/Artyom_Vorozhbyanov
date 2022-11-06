@@ -2,25 +2,37 @@ table {
     border: solid 5px black;
     border-collapse: collapse;
     margin: 150px auto;
+    counter-reset: tab 65;
 }
 
 td {
     height: 80px;
     width: 80px;
+    font-size: 3em;
+    text-align: center;
+}
+
+td::before {
+    counter-increment: tab -1;
+    content: counter(tab);
 }
 
 tr:nth-child(odd) td:nth-child(odd) {
     background-color: black;
+    color: white;
 }
 
 tr:nth-child(odd) td:nth-child(even) {
     background-color: white;
+    color: black;
 }
 
 tr:nth-child(even) td:nth-child(even) {
     background-color: black;
+    color: white;
 }
 
 tr:nth-child(even) td:nth-child(odd) {
     background-color: white;
+    color: black;
 }
