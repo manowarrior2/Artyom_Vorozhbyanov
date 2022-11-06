@@ -21,20 +21,15 @@ tbody tr:first-child td {
     border-top-style: none;
 }
 
-.name {
+.bord td:first-child {
+    font-weight: bold;
+}
+
+.name, .bord .name {
     border-left-style: none;
 }
 
-.bord .name {
-    border-left-style: none;
-}
-
-.end {
-    border-right-style: none;
-
-}
-
-.bord .end {
+.end, .bord .end {
     border-right-style: none;
 }
 
