@@ -1,0 +1,72 @@
+body {
+    width: 800px;
+    margin: 0 auto;
+}
+
+p {
+    text-indent: 40px;
+    border: solid 1px;
+    border-radius: 0px 10px;
+    padding: 5px;
+}
+
+a {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: blue;
+}
+
+.doc {
+    background-image: url(img/uni.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 12px;
+}
+
+.word {
+    background-image: url(img/doc.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 20px;
+}
+
+.pdf {
+    background-image: url(img/pdf.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 20px;
+}
+
+.arc {
+    background-image: url(img/arc.gif);
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 20px;
+}
+
+ul {
+    list-style-image: url(img/list.jpg);
+}
+
+.word1:hover {
+    background-image: url(img/doc.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-right: 20px;
+}
+
+.pdf1:hover {
+    background-image: url(img/pdf.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-right: 20px;
+}
+
+.arc1:hover{
+    background-image: url(img/arc.gif);
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-right: 20px;
+}
