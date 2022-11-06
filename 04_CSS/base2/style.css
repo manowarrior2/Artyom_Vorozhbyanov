@@ -21,7 +21,7 @@ tbody tr:first-child td {
     border-top-style: none;
 }
 
-.bord td:first-child {
+.name {
     font-weight: bold;
 }
 
