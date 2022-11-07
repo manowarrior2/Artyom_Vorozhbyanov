@@ -12,6 +12,9 @@
             code {
                 white-space: pre;
             }
+            #code {
+                font-weight: bold; text-decoration: underline
+            }
         </style>
     </head>
     <body>
@@ -66,7 +69,7 @@
 print 'Hello. I am a python program.'
 name = raw_input("What is your name?")
 print "Hello there, " + name + "!"
-</code></p>
+</code>             </p>
                     <p>
                         Это всё. Сохраните файл как <b>hello.py</b> в любом месте. Я предлагаю сохранить его в папке
                         <b>python_examples</b> в домашнем каталоге. Этот пример показывает, как просто написать
@@ -74,7 +77,7 @@ print "Hello there, " + name + "!"
                         этого введите в терминале
                     </p>
                     <p>
-                        <code style="font-weight: bold; text-decoration: underline";>chmod +x hello.py</code>
+                        <code id="code">chmod +x hello.py</code>
                     </p>
                     <p> в папке, в которой вы сохранили программу. Теперь запустите её.</p>
                     <p><code>greg@earth:~/python_examples$ ./hello.py
