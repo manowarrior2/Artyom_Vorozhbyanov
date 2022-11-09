@@ -1,2 +1,2 @@
-@import "mystyle_for_screen.css" screen;
-@import "mystyle_for_print.css" print;
+@import url(mystyle_for_screen.css) screen;
+@import url(mystyle_for_print.css) print;
