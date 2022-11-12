@@ -66,8 +66,7 @@
             </tfoot>
         </table>
         <div>
-            <button type="button" id="btn1">Нет скрытых строк</button>
-            <button type="button" id="btn2">Показать все строки</button>
+            <input type="button" id="btn" value="Нет скрытых строк">
         </div>
     <script
             src="https://code.jquery.com/jquery-3.6.1.min.js"
@@ -78,13 +77,11 @@
         $(document).ready(function() {
             $('.bord').on('click', function(){
             $(this).hide();
-            $('#btn1').hide();
-            $('#btn2').show();
+            $('#btn').val("Показать все строки");
         });
-            $('button').on('click', function(){
+            $('#btn').on('click', function(){
             $('.bord').show();
-            $('#btn2').hide();
-            $('#btn1').show();
+            $('#btn').val("Нет скрытых строк");
         });
     });
     </script>

@@ -52,7 +52,7 @@ tbody tr:nth-child(even) {
     background-color: rgb(211,211,211);
 }
 
-button {
+#btn {
     font-family: sans-serif;
     background-color: #1164fc;
     color: white;
@@ -60,8 +60,4 @@ button {
     border: solid 1px #1164fc;
     border-radius: 3px;
     cursor: pointer;
-}
-
-#btn2 {
-    display: none;
 }
