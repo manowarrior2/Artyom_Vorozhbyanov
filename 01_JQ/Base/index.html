@@ -77,14 +77,14 @@
     <script>
         $(document).ready(function() {
             $('.bord').on('click', function(){
-            $(this).css('display','none');
-            $('#btn1').css('display', 'none');
-            $('#btn2').css('display', 'block');
+            $(this).hide();
+            $('#btn1').hide();
+            $('#btn2').show();
         });
             $('button').on('click', function(){
-            $('.bord').css('display', 'table-row');
-            $('#btn2').css('display', 'none');
-            $('#btn1').css('display', 'block');
+            $('.bord').show();
+            $('#btn2').hide();
+            $('#btn1').show();
         });
     });
     </script>
