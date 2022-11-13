@@ -36,7 +36,7 @@
             $(document).ready(function() {
                 $('.pass').on('keyup', function(){
                     var pas1 = $("#pass").val();
-                    var pas2 = $(this).val();
+                    var pas2 = $("#repass").val();
                     if(pas1 != pas2){
                         $('.pass').css('backgroundColor', 'red');
                     } else {
