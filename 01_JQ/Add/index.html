@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма</title>
+    <style>
+        form {
+            width: 350px;
+            margin-top: 200px;
+            margin-left: 200px;
+        }
+        label {
+            line-height: 25px;
+        }
+    </style>
+</head>
+<body>
+    <form action="http://fe.it-academy.by/TestForm.php" method ="post" name="form">
+        <fieldset>
+            <label>
+                <input type="text" name="pass" class="pass" id="pass" required>* Пароль
+            </label>
+            <label>
+                <input type="text" name="repass" class="pass" id="repass" required>* Повторите пароль
+            </label>
+            <input type="submit" name="submit" value="Отправить">
+        </fieldset>
+    </form>
+
+
+    <script
+        src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+        crossorigin="anonymous">
+    </script>
+    <script>
+            $(document).ready(function() {
+                $('.pass').on('keyup', function(){
+                    var pas1 = $("#pass").val();
+                    var pas2 = $(this).val();
+                    if(pas1 != pas2){
+                        $('.pass').css('backgroundColor', 'red');
+                    } else {
+                        $('.pass').css('backgroundColor', 'green');
+                    }
+        });    
+    });
+    </script>
+</body>
+</html>
