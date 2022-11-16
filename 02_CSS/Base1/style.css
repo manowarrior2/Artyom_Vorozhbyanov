@@ -3,82 +3,47 @@ body {
     margin: 0 auto;
 }
 
-div {
-    height: 200px;
-    width: 750px;
+.cards {
     margin-top: 100px;
-}
-
-span {
-    display: inline-block;
     height: 200px;
     width: 140px;
+    float: left;
 }
 
-#span1 {
+#card1 {
     background-image: url('cards.png');
     background-position:-433px -1585px;
     background-repeat: no-repeat;
 }
 
-#span2 {
+#card2 {
     background-image: url('cards.png');
     background-position: 0px -1783px;
     background-repeat: no-repeat;
+    margin-left: -20px;
+    margin-top: 150px;
 }
 
-#span3 {
+#card3 {
     background-image: url('cards.png');
     background-position: -288px -1385px;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;    
+    margin-left: -35px;
+    margin-top: 170px;
 }
 
-#span4 {
+#card4 {
     background-image: url('cards.png');
     background-position: -144px -2181px;
     background-repeat: no-repeat;
+    margin-left: -40px;
+    margin-top: 190px;
 }
 
-#span5 {
+#card5 {
     background-image: url('cards.png');
     background-position: 3px -2379px;
     background-repeat: no-repeat;
-}
-
-.class {
-    height: 200px;
-    width: 140px;
-    position: sticky;
-    top: 0px;
-}
-
-#c1{
-    background-image: url('cards.png');
-    background-position:-433px -1585px;
-    background-repeat: no-repeat;
-}
-
-#c2{
-    background-image: url('cards.png');
-    background-position: 0px -1783px;
-    background-repeat: no-repeat;
-}
-
-#c3{
-    background-image: url('cards.png');
-    background-position: -288px -1385px;
-    background-repeat: no-repeat;
-}
-
-
-#c4{
-    background-image: url('cards.png');
-    background-position: -144px -2181px;
-    background-repeat: no-repeat;
-}
-
-#c5{
-    background-image: url('cards.png');
-    background-position: 3px -2379px;
-    background-repeat: no-repeat;
+    margin-left: -50px;
+    margin-top: 210px;
 }
